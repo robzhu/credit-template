@@ -16,10 +16,10 @@ function addCard(code, tag) {
 }
 
 
-// Step 2: set startingRow to the value of the excel row where you started to highlight
+// Step 1: set startingRow to the value of the excel row where you started to highlight
 let startingRow = 1;
 
-// Step 3: paste the block of codes between the backticks
+// Step 2: paste the block of codes between the backticks
 const codesBlock = `
 `;
 
@@ -27,7 +27,6 @@ const PageSize = 8;
 let pageBreakCount = 1;
 
 const codes = codesBlock.split(/\r?\n/).filter(code => code.length > 1);
-
 for (let code of codes) {
   addCard(code, startingRow);
   startingRow++;
