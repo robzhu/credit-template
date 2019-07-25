@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  height: 160px;
+  border: 6px dotted black;
+  margin: 0.5rem;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-align: center;
+  display: grid;
+  grid: auto 20px / auto 20px;
+}
+
+.content {
+  grid-area: 1 / 1 / span 2 / span 2;
+}
+
+.row-tag {
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.logo {
+  height: 40px;
+  display: block;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+  font-size: 1rem;
+}
+
+.twitter {
+  height: 1rem;
+}
+
+.code {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.page-break {
+  width: 100%;
+  height: 196px;
+}
